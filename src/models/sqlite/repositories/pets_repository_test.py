@@ -64,11 +64,9 @@ def test_list_pets_no_result():
 
     assert response == []
 
-def test_delete_pet_error():
-    mock_connection = MockConnection()
+def test_delete_pets_error():
+    mock_connection = MockConnectionNoResult()
     repo = PetsRepository(mock_connection)
-
-    repo.delete_pets("petName")
 
     with pytest.raises(Exception):
         repo.delete_pets("petName")
