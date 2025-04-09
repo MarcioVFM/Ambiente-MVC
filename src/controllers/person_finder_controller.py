@@ -25,8 +25,8 @@ class PersonFinderControllers:
                 'attributes': {
                     'first_name': person.first_name,
                     'last_name': person.last_name,
-                    'age': person.age,
-                    'pet_id': person.pet_id
+                    'pet_name': person.pet_name,
+                    'pet_id': person.pet_type
                 }
 
             }
