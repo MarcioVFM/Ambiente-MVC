@@ -5,4 +5,4 @@ def test_delete_pet(mocker):
     controller = PetDeleterController(mock_repository)
     controller.delete('Oliver')
 
-    mock_repository.delete_pet.assert_called_once_with('Oliver')
+    mock_repository.delete_pets.assert_called_once_with('Oliver')
