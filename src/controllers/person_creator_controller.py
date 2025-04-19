@@ -1,6 +1,6 @@
 import re
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInteface
-from src.errors.erros_types.http_bad_request import HttpBadRequestError
+from src.errors.error_types.http_bad_request import HttpBadRequestError
 from.interfaces.person_creator_controller import PersonCreatorControllersInterface
 
 class PersonCreatorControllers(PersonCreatorControllersInterface):
